@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="xd">
+    <meta http-equiv="Cache-control" content="public">
+    
+    <link rel="canonical" href="https://www.onlidev.com" />
+    <link rel="icon" href="assets/logo/logo.svg">
+    <link rel="alternate icon" type="image/png" href="assets/logo/logo.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="assets/styles/sheets/home/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Inicio</title>
+</head><body>
+    <header id="header">
+    <nav class="header__nav">
+        <figure class="nav__logo">
+            <a href="http://localhost/guecord_solutions/" class="item__link">
+                <img src="assets/logo/logo.jpg" alt="Logo de Guecord Solutions" class="logo__image">
+            </a>
+        </figure>
+        <section class="nav__button">
+            <button class="button__item" aria-label="menu" id="open_menu" onclick="openMenu()">
+                <img src="assets/media/icons/menu_icon.jpg" alt="Menu icon" width="24" height="24" ></img>
+            </button>
+        </section>
+        <menu class="nav__menu" id="menu">
+            <li class="menu__item">
+                <a href="http://localhost/guecord_solutions/" class="item__link">Inicio</a>
+            </li>
+            <li class="menu__item">
+                <a href="http://localhost/guecord_solutions/servicios" class="item__link">Servicios</a>
+            </li>
+            <li class="menu__item">
+                <a href="http://localhost/guecord_solutions/acerca_de" class="item__link">Acerca de</a>
+            </li>
+            <li class="menu__item">
+                <a href="http://localhost/guecord_solutions/contacto" class="item__link">Contacto</a>
+            </li>
+            <li class="menu__item">
+                <a href="http://localhost/guecord_solutions/proyectos" class="item__link">Proyectos</a>
+            </li>
+        </menu>
+    </nav>
+</header>    <main id="main">
+        <section class="main__welcome">
+            <h1>Brindamos soluciones para hacer crecer empresas</h1>
+            <p>Ayudamos a empresas y pymes a quitarse muchos dolores de cabeza.</p>
+            <div class="welcome__button">
+                <a href="http://localhost/guecord_solutions/acerca_de">Leer más <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </section>
+        <section class="main__work">
+            <ul class="work__list">
+                <li class="list__item">
+                    <div class="item__icon">
+                        <i class='bx bx-search' ></i>
+                    </div>
+                    <h3>Consulta del negocio</h3>
+                    <p>Para hacer un buen servicio efectivo, identificamos tus necesidades y objetivos utilizando encuestas, análisis de datos y seguimiento en redes sociales.</p>
+                </li>
+                <li class="list__item">
+                    <div class="item__icon">
+                        <i class='bx bx-search' ></i>
+                    </div>
+                    <h3>Estrategias</h3>
+                    <p>Para crear nuestras estrategias, nos inspiramos en la innovación y en la perspectiva del cliente. Analizamos tendencias y tomamos en cuenta su feedback para crear soluciones personalizadas que destaquen en el mercado.</p>
+                </li>
+                <li class="list__item">
+                    <div class="item__icon">
+                        <i class='bx bxs-message-square' ></i>
+                    </div>
+                    <h3>Comunicación</h3>
+                    <p>Siempre estamos abiertos a escuchar sus necesidades y sugerencias, y nos aseguramos de brindar una comunicación cercana y efectiva para mantenerlos informados y satisfechos.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="welcome__reviews">
+            <picture class="reviews__picture">
+                <img src="assets/media/images/testimonial.png" alt="Representación de personas dando testimonio de nuestros servicios">
+            </picture>
+            <div class="reviews__opinions">
+                <h2>Que piensan ellos</h2>
+                <div class="opinions__slider">
+                    <ul class="slider__slides">
+                        <li class="slides__slide fade">
+                            <div class="slide__person">
+                                <picture class="person__image">
+                                    <img src="assets/media/images/profile.png" alt="Personas que dio su opinión">
+                                </picture>
+                                <span class="person__details">Nombre</span>
+                            </div>
+                            <p>“Hi, it’s Samantha. After using it made me a lot of benefits, starting with convenience of setting a deadline of tasks and schedule after that the app is very simple using.“</p>
+                        </li>
+                        <li class="slides__slide fade">
+                            <div class="slide__person">
+                                <picture class="person__image">
+                                    <img src="assets/media/images/profile.png" alt="Personas que dio su opinión">
+                                </picture>
+                                <div class="person__details">
+                                    <span class="details__name">Nombre2</span>
+                                </div>
+                            </div>
+                            <p>“Hi, it’s Samantha. After using it made me a lot of benefits, starting with convenience of setting a deadline of tasks and schedule after that the app is very simple using.“</p>
+                        </li>
+                        <li class="slides__slide fade">
+                            <div class="slide__person">
+                                <picture class="person__image">
+                                    <img src="assets/media/images/profile.png" alt="Personas que dio su opinión">
+                                </picture>
+                                <div class="person__details">
+                                    <span class="details__name">Nombre3</span>
+                                </div>
+                            </div>
+                            <p>“Hi, it’s Samantha. After using it made me a lot of benefits, starting with convenience of setting a deadline of tasks and schedule after that the app is very simple using.“</p>
+                        </li>
+                    </ul>
+                    <div class="slider__buttons">
+                        <div class="prev" onclick="plusSlides(-1)"><i class='bx bx-left-arrow-alt' ></i></div>
+                        <div class="next" onclick="plusSlides(1)"><i class='bx bx-right-arrow-alt' ></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <nav class="footer__nav">
+        <figure class="nav__logo">
+            <a href="http://localhost/guecord_solutions/" class="item__link">
+                <img src="assets/logo/logo.jpg" alt="Logo de Guecord Solutions" class="logo__image">
+            </a>
+        </figure>
+        <div class="nav__columns">
+            <menu class="columns__menu">
+                <li class="menu__col">
+                    <span class="col__title">Contacto</span>
+                </li>
+                <li class="menu__col">
+                    <a class="col__item" href="mailto:aguerrero@guecordsolutions.com">aguerrero@guecordsolutions.com</a>
+                </li>
+                <li class="menu__col">
+                    <a class="col__item" href="tel:++1 xxx-xxx-xxxx">+1 xxx-xxx-xxxx</a>
+                </li>
+            </menu>
+            <menu class="columns__menu">
+                <li class="menu__col menu__col-title">
+                    <span class="col__title">Síguenos</span>
+                </li>
+                <li class="menu__col">
+                    <a class="col__item" aria-label="Nuestro Facebook" href="#">
+                    <i class='bx bxl-facebook' ></i></a>
+                </li>
+                <li class="menu__col">
+                    <a class="col__item" aria-label="Nuestro Instagram" href="https://instagram.com/onli.dev?igshid=MjEwN2IyYWYwYw==">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </li>
+                <li class="menu__col">
+                    <a class="col__item" aria-label="Nuestro twitter" href="https://twitter.com/JuliaMooreNYC">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                </li>
+                <li class="menu__col">
+                    <a class="col__item" aria-label="Nuestro TikTok" href="https://www.tiktok.com/@onlidev?_t=8eALnZBCEws&_r=1"><i class='bx bxl-tiktok' ></i></a>
+                </li>
+            </menu>
+        </div>
+    </nav>
+</footer></body>
+<script src="assets/js/components/blocs/menu.js"></script><script src="assets/js/scripts/home.js"></script>
+</html>

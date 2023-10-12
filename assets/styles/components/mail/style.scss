@@ -1,0 +1,43 @@
+@import '../config/main';
+
+
+.main{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .main__header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+        h1{
+            font-size: $title;
+        }
+        
+    }
+    hr{
+        width: 100rem;
+        height: .5rem;
+        background-color: $color_1;
+        outline: none;
+        border: none;
+    }
+
+    .main__body{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: start;
+
+        h3{
+            margin: 2rem 0rem;
+        }
+        p{
+            font-weight: 500;
+        }
+    }
+}

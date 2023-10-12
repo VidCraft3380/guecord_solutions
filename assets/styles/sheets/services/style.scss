@@ -1,0 +1,284 @@
+@import "../../components/config/main";
+
+body {
+    main {
+        @include computer(){
+            .main__our-service {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: $space_extra_small;
+                picture {
+                    display: block;
+                    width: 800px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                h1 {
+                    display: inline;
+                    text-align: center;
+                    max-width: 800px;
+                }
+                p {
+                    max-width: 800px;
+                }
+            }
+        }
+        @include pc(){
+            .main__our-service {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: $space_extra_small;
+                picture {
+                    display: block;
+                    width: 800px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                h1 {
+                    display: inline;
+                    text-align: center;
+                    max-width: 800px;
+                }
+                p {
+                    max-width: 800px;
+                }
+            }
+        }
+        @include phone(){
+            .main__our-service {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: $space_extra_small;
+                picture {
+                    display: block;
+                    width: 100%;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 95%;
+                    }
+                }
+                h1 {
+                    display: inline;
+                    text-align: center;
+                    max-width: 800px;
+                }
+                p {
+                    padding-left: $space_small;
+                    padding-right: $space_small;
+                    text-align: center;
+                }
+            }
+        }
+        @include computer(){
+            .main__services {
+                display: flex;
+                flex-direction: column;
+                gap: $space_extra_small;
+                padding-left: $space_small;
+                padding-right: $space_small;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        gap: $space_extra_small;
+                        picture {
+                            display: block;
+                            width: 250px;
+                            height: 200px;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        h3 {
+                            font-size: $subtitle_3;
+                            line-height: $subtitle_3_lh;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        @include pc(){
+            .main__services {
+                display: flex;
+                flex-direction: column;
+                gap: $space_extra_small;
+                padding-left: $space_small;
+                padding-right: $space_small;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        gap: $space_extra_small;
+                        picture {
+                            display: block;
+                            width: 250px;
+                            height: 200px;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        h3 {
+                            font-size: $subtitle_3;
+                            line-height: $subtitle_3_lh;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        @include phone(){
+            .main__services {
+                display: flex;
+                flex-direction: column;
+                gap: $space_extra_small;
+                padding-left: $space_small;
+                padding-right: $space_small;
+                margin-bottom: 0;
+                h2 {
+                    text-align: center;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: $space_extra_small;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        gap: $space_short;
+                        picture {
+                            display: block;
+                            width: 250px;
+                            height: 200px;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        h3 {
+                            font-size: $subtitle_3;
+                            line-height: $subtitle_3_lh;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        @include tablets(){
+            .main__services {
+                display: flex;
+                flex-direction: column;
+                gap: $space_extra_small;
+                padding-left: $space_small;
+                padding-right: $space_small;
+                margin-bottom: 0;
+                h2 {
+                    text-align: center;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: $space_extra_small;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        gap: $space_short;
+                        picture {
+                            display: block;
+                            width: 250px;
+                            height: 200px;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        h3 {
+                            font-size: $subtitle_3;
+                            line-height: $subtitle_3_lh;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        @include tabletsSmall(){
+            .main__services {
+                display: flex;
+                flex-direction: column;
+                gap: $space_extra_small;
+                padding-left: $space_small;
+                padding-right: $space_small;
+                margin-bottom: 0;
+                h2 {
+                    text-align: center;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: $space_extra_small;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        gap: $space_short;
+                        picture {
+                            display: block;
+                            width: 250px;
+                            height: 200px;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        h3 {
+                            font-size: $subtitle_3;
+                            line-height: $subtitle_3_lh;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import "../../components/config/main";
+
+body {
+    main {
+        .main__info {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-left: $space_small;
+            padding-right: $space_small;
+            .info__text {
+                display: flex;
+                flex-direction: column;
+                gap: $space_small;
+                width: 50%;
+                min-height: 259.05px;
+                h1,
+                h2 {
+                    font-size: $subtitle_2;
+                    line-height: $subtitle_2_lh;
+                    word-break: break-word;
+                }
+                p, 
+                a {
+                    display: block;
+                    width: 100%;
+                    word-break: break-word;
+                }
+                a {
+                    color: $color_4;
+                    font-weight: bold;
+                }
+                .text__container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: $space_extra_small;
+                }
+            }
+            picture {
+                display: inline-block;
+                width: 50%;
+                min-width: 280px;
+                min-height: 259.05px;
+                height: calc(50% - 5px);
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @include tabletsSmall(){
+                flex-direction: column-reverse;
+                justify-content: center;
+                gap: $space_small;
+                .info__text {
+                    width: 100%;
+                }
+            }
+            @include phone(){
+                flex-direction: column-reverse;
+                justify-content: center;
+                gap: $space_small;
+                .info__text {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import "../mixins/media";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-display: swap;
+}
+html {
+    font-family: $font;
+    @include computer(){
+        font-size: 62.5%;
+    }
+    @include pc(){
+        font-size: 62.5%;
+    }
+    @include tablets(){
+        font-size: 62.5%;
+    }
+    @include phone(){
+        font-size: 62.5%;
+    }
+    @include tabletsSmall(){
+        font-size: 62.5%;
+    }
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    display: block;
+    background: $page !important;
+    color: $text;
+    overflow-x: hidden;
+
+}
+header{
+    display: block;
+    width: 100%;
+}
+main {
+    display: block;
+    >section {
+       margin-bottom: $space_extra_large;
+    }
+}
+footer{
+    display: block;
+    width: 100%;
+}
+h1 {
+    font-size: $title;
+    line-height: $title_lh;
+}
+h2 {
+    font-size: $title_2;
+    line-height: $title_2_lh;
+}
+h3 {
+   font-size: $subtitle;
+    line-height: $subtitle_lh;
+}
+h4 {
+    font-size: $subtitle_2;
+    line-height: $subtitle_2_lh;
+}
+h5 {
+    font-size: $subtitle_2;
+    line-height: $subtitle_2_lh;
+}
+h6 {
+    font-size: $subtitle_3;
+    line-height: $subtitle_3_lh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: $text;
+}
+p,
+a,
+li,
+button,
+span,
+input, 
+textarea,
+label {
+    outline: none;
+    border: none;
+    font-family: $font;
+    color: $text;
+    text-decoration: none;
+    font-size: $paragraph;
+    line-height: $paragraph_lh;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+ul,
+menu {
+    list-style: none;
+}

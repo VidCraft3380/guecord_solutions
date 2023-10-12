@@ -1,0 +1,292 @@
+@import "../../components/config/main";
+
+h1,
+h2,
+h3,
+h4, 
+h5,
+h6 {
+  span {
+    font-size: inherit;
+    font-weight: inherit;
+    color: blue;
+  }
+}
+body {
+  main {
+    @include computer(){
+      .main__mission {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        .mission__description {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          gap: $space_extra_small;
+        }
+      }
+    }
+    @include pc(){
+      .main__mission {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        .mission__description {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          gap: $space_extra_small;
+        }
+      }
+    }
+    @include phone(){
+      .main__mission {
+        display: flex;
+        flex-direction: column;
+        gap: $space_extra_small;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        .mission__picture {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 95%;
+          }
+        }
+        .mission__description {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: $space_extra_small;
+        }
+      }
+    }
+    @include tablets(){
+      .main__mission {
+        display: flex;
+        flex-direction: column;
+        gap: $space_extra_small;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        .mission__picture {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 95%;
+          }
+        }
+        .mission__description {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: $space_extra_small;
+        }
+      }
+    }
+    @include tabletsSmall(){
+      .main__mission {
+        display: flex;
+        flex-direction: column;
+        gap: $space_extra_small;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        .mission__picture {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 95%;
+          }
+        }
+        .mission__description {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: $space_extra_small;
+        }
+      }
+    }
+    @include computer(){
+      .main__why {
+        display: flex;
+        flex-direction: column;
+        gap: $space_medium;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          li {
+            width: 300px;
+            height: 300px;
+            background: url("../../../../assets/media/images/fade.svg");
+            padding: $space_short;
+            h3 {
+              text-align: center;
+              margin-bottom: $space_extra_small;
+              color: $white;
+            }
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    @include pc(){
+      .main__why {
+        display: flex;
+        flex-direction: column;
+        gap: $space_medium;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          li {
+            width: 300px;
+            height: 300px;
+            background: url("../../../../assets/media/images/fade.svg");
+            padding: $space_short;
+            h3 {
+              text-align: center;
+              margin-bottom: $space_extra_small;
+              color: $white;
+            }
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    @include phone(){
+      .main__why {
+        display: flex;
+        flex-direction: column;
+        gap: $space_small;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        h2 {
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: $space_extra_small;
+          justify-content: space-between;
+          li {
+            width: 300px;
+            height: 300px;
+            background: url("../../../../assets/media/images/fade.svg");
+            padding: $space_short;
+            h3 {
+              text-align: center;
+              margin-bottom: $space_extra_small;
+              color: $white;
+            }
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    @include tablets(){
+      .main__why {
+        display: flex;
+        flex-direction: column;
+        gap: $space_small;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        h2 {
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: $space_extra_small;
+          justify-content: space-between;
+          li {
+            width: 300px;
+            height: 300px;
+            background: url("../../../../assets/media/images/fade.svg");
+            padding: $space_short;
+            h3 {
+              text-align: center;
+              margin-bottom: $space_extra_small;
+              color: $white;
+            }
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    @include tabletsSmall(){
+      .main__why {
+        display: flex;
+        flex-direction: column;
+        gap: $space_small;
+        padding-left: $space_small;
+        padding-right: $space_small;
+        h2 {
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: $space_extra_small;
+          justify-content: space-between;
+          li {
+            width: 300px;
+            height: 300px;
+            background: url("../../../../assets/media/images/fade.svg");
+            padding: $space_short;
+            h3 {
+              text-align: center;
+              margin-bottom: $space_extra_small;
+              color: $white;
+            }
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .main__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $space_small;
+      @include phone(){
+        margin-bottom: 0;
+      }
+      @include tablets(){
+        margin-bottom: 0;
+      }
+      @include tabletsSmall(){
+        margin-bottom: 0;
+      }
+      h4 {
+        font-size: $title_2;
+        line-height: $title_2_lh;
+      }
+      div {
+        @include button($black, transparent);
+        border: $border_large solid $black;
+      }
+    }
+  }
+}

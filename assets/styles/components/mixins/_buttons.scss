@@ -1,0 +1,16 @@
+@mixin button($color, $background) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $space_short $space_extra_small;
+    background: $background;
+    border-radius: $border_medium;
+    color: $color;
+    span,
+    a {
+        display: flex;
+        align-items: center;
+        color: $color;
+        font-weight: 600;
+    }
+}
